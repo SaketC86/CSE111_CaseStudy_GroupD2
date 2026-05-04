@@ -1,3 +1,4 @@
+
 package OnlineFoodSystem;
 import java.util.*;
 public class Main {
@@ -6,13 +7,19 @@ public class Main {
         ArrayList<Restaurants> resList = new ArrayList<>();
         ArrayList<Menu> menuList = new ArrayList<>();
         ArrayList<Menu> cart = new ArrayList<>();
-        resList.add(new Restaurants("Spice Garden", "Indiranagar", 4.3, "Indian", 5.2));
-        resList.add(new Restaurants("Food Hub", "MG Road", 4.6, "Chinese", 2.5));
-        resList.add(new Restaurants("Tasty Treats", "BTM", 3.9, "Fast Food", 7.8));
-        menuList.add(new Menu("Chicken Biryani", 250, "Main Course", true));
-        menuList.add(new Menu("Noodles", 150, "Main Course", true));
-        menuList.add(new Menu("Burger", 120, "Fast Food", true));
-        menuList.add(new Menu("Paneer Tikka", 200, "Starter", true));
+        resList.add(new Restaurants("McDonald's", "MG Road", 4.2, "Fast Food", 1.8));
+        resList.add(new Restaurants("Paradise Biryani", "Jubilee Hills", 4.7, "Biryani", 3.2));
+        resList.add(new Restaurants("Domino's Pizza", "Indiranagar", 4.1, "Pizza", 2.5));
+        resList.add(new Restaurants("KFC", "Brigade Road", 4.3, "Fast Food", 4.0));
+        resList.add(new Restaurants("Subway", "Koramangala", 4.0, "Sandwiches", 3.7));
+
+        menuList.add(new Menu("Veg Burger", 99, "Fast Food", true));
+        menuList.add(new Menu("Chicken Burger", 149, "Fast Food", true));
+        menuList.add(new Menu("Dum Biryani", 299, "Biryani", true));
+        menuList.add(new Menu("Cheese Pizza", 349, "Pizza", true));
+        menuList.add(new Menu(" Paneer Pizza", 399, "Pizza", true));
+        menuList.add(new Menu("Sandwhich", 149, "Sandwich", true));
+        menuList.add(new Menu("Fried Chicken", 179, "Starter", true));
         System.out.print("Enter username: ");
         String name = sc.nextLine();
         System.out.print("Enter phone number: ");
@@ -174,6 +181,7 @@ public class Main {
                 sc.nextLine();
             }
         } while (choice != 8);
+        sc.close();
     }
 }
 
