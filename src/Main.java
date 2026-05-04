@@ -1,4 +1,3 @@
-
 package OnlineFoodSystem;
 import java.util.*;
 public class Main {
@@ -175,7 +174,6 @@ public class Main {
                 sc.nextLine();
             }
         } while (choice != 8);
-        sc.close();
     }
 }
 
