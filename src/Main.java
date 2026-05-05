@@ -57,7 +57,7 @@ public class Main {
                         	System.out.println(
                         	    (i + 1) + ". " +
                         	    r.getRestaurantName() +
-                        	    "     *" + r.getRating() +
+                        	    "       *" + r.getRating() +
                         	    "     |   " + r.getDistance() + " km away"
                         	);
                         }
@@ -161,8 +161,8 @@ public class Main {
                             System.out.println("No order placed yet!");
                             break;
                         }
-                        System.out.println(agent.acceptDelivery(String.valueOf(order.getOrderID())));
-                        agent.trackOrder(String.valueOf(order.getOrderID()));
+                        System.out.println(agent.acceptDelivery((order.getOrderID())));
+                        agent.trackOrder((order.getOrderID()));
                         System.out.println(agent.updateLocation("On the way"));
                         System.out.println(agent.markDelivered("Delivered"));
                         break;
