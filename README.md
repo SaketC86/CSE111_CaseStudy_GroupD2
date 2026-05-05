@@ -46,11 +46,20 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 ### Restaurant Selection
 ![Restaurant](output/restaurant.png)
 
+### Cart
+![cart](output/cart.png)
+
 ### Order Placed
 ![Order](output/order.png)
 
-More sample outputs in output folder
+### Payment
+![Payment](output/payment.png)
 
+### Track order
+![Tracking](output/track.png)
+
+### Feedback
+![feedback](output/feedback.png)
 ---
 
 ## Tools and Technologies Used
