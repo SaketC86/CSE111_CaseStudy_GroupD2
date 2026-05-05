@@ -57,7 +57,7 @@ public class Main {
                         	System.out.println(
                         	    (i + 1) + ". " +
                         	    r.getRestaurantName() +
-                        	    "     ⭐" + r.getRating() +
+                        	    "     *" + r.getRating() +
                         	    "     |   " + r.getDistance() + " km away"
                         	);
                         }
