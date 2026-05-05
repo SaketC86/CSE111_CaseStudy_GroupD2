@@ -64,7 +64,7 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ## Tools and Technologies Used
 
-1.Java
+1.Java    
 2.OOP Concepts (Classes encapsulation)    
 3.File Input/Output (Saving user and order to txt files    
 4.Exception Handing (Handling wrong inputs by user)    
