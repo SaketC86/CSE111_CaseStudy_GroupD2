@@ -73,11 +73,15 @@ public class User {
         }
     }
 
-    public String Feedback(String feedback) {
-        this.feedback = feedback;
-        return "Feedback submitted: " + feedback;
+    public String Feedback(int choice) {
+        switch (choice) {
+            case 1: this.feedback = "Excellent"; break;
+            case 2: this.feedback = "Average"; break;
+            case 3: this.feedback = "Bad"; break;
+            default: return "Invalid feedback option!";
+        }
+        return "Feedback submitted: " + this.feedback;
     }
-
     public String PaymentType(String type) {
         return "Selected Payment Method: " + type;
     } 
