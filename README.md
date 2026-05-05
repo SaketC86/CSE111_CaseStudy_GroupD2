@@ -8,7 +8,7 @@ This is a case study group project for CSE111.This a console based food order ap
 1. Sputhnik.P (AM.SC.U4CSE25340)-Main java implementation
 2. Saket.C (AM.SC.U4CSE25345)-Output Screenshots and Github Setup
 3. M.Vishnu Yaswanth (AM.SC.U4CSE25334)-Testing and Documentation
-4. Swapnil.N (AM.SCU4CSE25337)-Class Design and UML Diagrams
+4. Swapnil.N (AM.SC.U4CSE25337)-Class Design and UML Diagrams
 
 ---
 
@@ -44,6 +44,8 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ### Order Placed
 ![Order](output/order.png)
+
+More sample outputs in output folder
 
 ---
 
