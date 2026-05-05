@@ -21,7 +21,7 @@ public class Delivery {
         this.order = order;
     }
 
-    public String acceptDelivery(String orderID) {
+    public String acceptDelivery(int orderID) {
         return "Delivery accepted for Order ID: " + orderID;
     }
 
@@ -33,7 +33,7 @@ public class Delivery {
     public String markDelivered(String status) {
         return "Order delivery status: " + status;
     }
-    public void trackOrder(String orderID) {
+    public void trackOrder(int orderID) {
         System.out.println("Tracking Order ID: " + orderID);
         System.out.println("Agent: " + agentName);
         System.out.println("Mobile: " + mobileNumber);
