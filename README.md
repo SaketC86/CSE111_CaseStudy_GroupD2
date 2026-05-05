@@ -12,7 +12,7 @@ This is a case study group project for CSE111.This a console based food order ap
 
 ---
 
-##Problem Description
+## Problem Description
 
 Customers want convenient food ordering. Phone-based systems cause delays and errors. A 
 centralized digital platform is needed. Modern lifestyles have increased demand for convenient food 
@@ -24,7 +24,7 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ---
 
-##How to Run
+## How to Run
 
 1.Clone the repo(git clone https://github.com/SaketC86/CSE111_CaseStudy_GroupD2)   
 2.Open project in Eclipse or IntelliJ     
