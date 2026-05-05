@@ -26,11 +26,15 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ## How to Run
 
-1.Clone the repo(git clone https://github.com/SaketC86/CSE111_CaseStudy_GroupD2.git)      
-2.Open project in Eclipse or IntelliJ     
-3.Go to Main.java   
-4.Click Run code    
-5.Enter the inputs in the console and navigate through the app   
+1.First enter your name and phone number.        
+2.Enter choice as 1 and Select your preferred restaurants from the list.   
+3. enter choice as 2 Add items to the cart  
+4.You can view cart when enering choice as 3  
+5.Enter choice as 4 to Place the order  
+6.enter 5 to Pay for the order using your perferred payment.  
+7.enter choice 6 for You can track order and view driver details  
+8.enter choice 7 so You can also submit feedback.   
+9.Enter choice 8 to Exit the program.   
 
 ---
 
