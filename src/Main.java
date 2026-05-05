@@ -20,16 +20,16 @@ public class Main {
         menuList.add(new Menu(" Paneer Pizza", 399, "Pizza", true));
         menuList.add(new Menu("Sandwhich", 149, "Sandwich", true));
         menuList.add(new Menu("Fried Chicken", 179, "Starter", true));
-        System.out.print("Enter username: ");
+        System.out.print("Enter username or Email: ");
         String name = sc.nextLine();
         System.out.print("Enter phone number: ");
         String phone = sc.nextLine();
         User user = new User(name, "Default Address", phone, name + "@mail.com");
         if (user.checkUser()) {
-            System.out.println("Welcome back!");
+            System.out.println("\nWelcome back!");
         } else {
             user.saveUser();
-            System.out.println("New user registered!");
+            System.out.println("\nNew user registered!");
         }
         Order order = new Order(101, "");
         Delivery agent = new Delivery("Ravi", "912345678", "City", 4521, "Available");
@@ -154,6 +154,7 @@ public class Main {
                         }
                         System.out.println(agent.makePayment(pay));
                         System.out.println(user.PaymentType(method));
+                        System.out.println("\nYour order will be delivered in few minutes....");
                         break;
                     case 6:
                         if (cart.isEmpty()) {
@@ -166,9 +167,14 @@ public class Main {
                         System.out.println(agent.markDelivered("Delivered"));
                         break;
                     case 7:
-                        System.out.print("Enter feedback: ");
-                        String fb = sc.nextLine();
-                        System.out.println(user.Feedback(fb));
+                        System.out.println("Rate your experience:");
+                        System.out.println("1. Excellent");
+                        System.out.println("2. Average");
+                        System.out.println("3. Bad");
+                        System.out.print("Enter choice: ");
+                        int fbChoice = sc.nextInt();
+                        sc.nextLine();
+                        System.out.println(user.Feedback(fbChoice));
                         break;
                     case 8:
                         System.out.println("Exiting...");
@@ -184,4 +190,3 @@ public class Main {
         sc.close();
     }
 }
-
