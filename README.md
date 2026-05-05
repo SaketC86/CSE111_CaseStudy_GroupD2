@@ -69,7 +69,7 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 3.File Input/Output (Saving user and order to txt files    
 4.Exception Handing (Handling wrong inputs by user)    
 5.Eclipse (IDE Used for testing and deleoping code)   
-6.Github (Repo hosting) 
+6.Github (Repo hosting)     
 7.Array List (collection of objects)
 
 
