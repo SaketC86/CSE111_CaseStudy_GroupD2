@@ -5,10 +5,10 @@ This is a case study group project for CSE111.This a console based food order ap
 ---
 
 ## Team members
-1. Sputhnik.P (AM.SC.U4CSE25340)-Order class and Delivery class.
-2. Saket.C (AM.SC.U4CSE25345)-Coded Main class and Restaurant class,
-3. M.Vishnu Yaswanth (AM.SC.U4CSE25334)-Coded user class, Use case diagrams.  
-4. Swapnil.N (AM.SC.U4CSE25337)-Testing and Class diagram, coded Menu class.
+1. Sputhnik.P (AM.SC.U4CSE25340)-Coded the classes (Menu, Order, delivery)   
+2. Saket.C (AM.SC.U4CSE25345)-Coded Main class and finished the code.   
+3. M.Vishnu Yaswanth (AM.SC.U4CSE25334)-Code the classes( User,restaurant).      
+4. Swapnil.N (AM.SC.U4CSE25337)-Idea logic and UML diagrams.    
 
 ---
 
