@@ -1,18 +1,20 @@
 package OnlineFoodSystem;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 import java.io.*;
 
 public class Order {
+	private static int nextOrderID = loadLastOrderID();
     private int orderID;
     private String orderStatus;
     private String orderedItems;
-    private int amount;
-
+    private double amount;
     private Restaurants restaurant;
     private Delivery delivery;
 
-    public Order(int orderID, String orderedItems) {
-        this.orderID = orderID;
+    public Order(String orderedItems) {
+        this.orderID = nextOrderID++;
         this.orderedItems = orderedItems;
         this.orderStatus = "checking availability";
         this.amount = 0;
@@ -27,13 +29,8 @@ public class Order {
     }
 
     public double calculateAmount(double amount) {
-        this.amount = (int) amount;
+        this.amount =amount;
         return this.amount;
-    }
-
-    public String updateStatus(String status) {
-        this.orderStatus = status;
-        return "Order status updated to: " + status;
     }
 
     public String placeOrder(String item) {
@@ -47,14 +44,14 @@ public class Order {
         return "Order cancelled: " + this.orderedItems;
     }
 
-    public String confirmOrder(String itemChecked) {
+    public String confirmOrder() {
         this.orderStatus = "Confirmed";
 
         if (restaurant != null) {
-            System.out.println(restaurant.receiveOrder(orderID));
+            return restaurant.receiveOrder(orderID);
         }
 
-        return "Order confirmed: " + itemChecked;
+        return "Order confirmed";
     }
 
     public int getOrderID() {
@@ -64,14 +61,45 @@ public class Order {
     public void saveOrder() {
         try {
             FileWriter fw = new FileWriter("orders.txt", true);
-            BufferedWriter bw = new BufferedWriter(fw);
+            
 
-            bw.write(orderID + "," + orderedItems + "," + amount + "," + orderStatus);
-            bw.newLine();
-
-            bw.close();
+            fw.write(orderID + "," + orderedItems + "," + amount + "," + orderStatus+"\n");
+            fw.close();
         } catch (IOException e) {
             System.out.println("Error writing file");
         }
     }
-}
+    public void printReceipt(String restaurantName, ArrayList<Menu> cart, String paymentMethod) {
+        System.out.println("\n===== ORDER RECEIPT =====");
+        System.out.println("Order ID:    " + orderID);
+        System.out.println("Restaurant: " + restaurantName);
+        System.out.println("Items:");
+        for (Menu m : cart) {
+            System.out.println("  - " + m.getItemName() + "     ₹" + m.getPrice());
+        }
+        System.out.println("-------------------------");
+        System.out.println("Total:      ₹" + amount);
+        System.out.println("Payment:    " + paymentMethod);
+        System.out.println("Status:     " + orderStatus);
+        System.out.println("=========================");
+    }
+    private static int loadLastOrderID() {
+        try {
+            File file = new File("orders.txt");
+            if (!file.exists()) return 101;
+
+            Scanner sc = new Scanner(file);
+            int ordercount = 0;
+
+            while (sc.hasNextLine()) {
+                sc.nextLine();
+                ordercount++;
+            }
+
+            sc.close();
+            return 100 + ordercount + 1; 
+        } catch (Exception e) {
+            return 101;
+        }
+    }
+    }
