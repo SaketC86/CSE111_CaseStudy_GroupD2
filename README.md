@@ -40,26 +40,38 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ## Sample Input and Output
 
-### Registration
-![Registration](output/registration.png)
+The inputs are blue in colour and the outputs are in white.
+
+### Login
+![](output/login.png)
 
 ### Restaurant Selection
-![Restaurant](output/restaurant.png)
+![Restaurant](output/case1.png)
 
-### Cart
-![cart](output/cart.png)
+### Add to Cart
+![cart](output/case2.png)
+
+### view Cart
+![cart](output/case3.png)
 
 ### Order Placed
-![Order](output/order.png)
+![Order](output/case4.png)
 
 ### Payment
-![Payment](output/payment.png)
+![Payment](output/case5.png)
 
 ### Track order
-![Tracking](output/track.png)
+![Tracking](output/case6.png)
 
 ### Feedback
-![feedback](output/feedback.png)
+![feedback](output/case7.png)
+
+### Cancel Order
+![cancel](output/case8.png)
+
+### Exit program
+![exit](output/case9.png)
+
 ---
 
 ## Tools and Technologies Used
