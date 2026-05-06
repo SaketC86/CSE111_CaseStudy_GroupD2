@@ -40,7 +40,7 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 
 ## Sample Input and Output
 
-The inputs are blue in colour and the outputs are in white.
+The inputs are BLUE in colour and the outputs are in WHITE.
 
 ### Login
 ![](output/login.png)
