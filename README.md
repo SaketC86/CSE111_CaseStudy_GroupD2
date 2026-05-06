@@ -33,7 +33,7 @@ restaurants, and delivery agents on a single platform, ensuring smooth order pro
 5.Enter choice as 4 to Place the order  
 6.enter 5 to Pay for the order using your perferred payment and get your reciept.     
 7.enter choice 6 for You can track order and view driver details  
-8.enter choice 7 so You can also submit feedback.
+8.enter choice 7 so You can also submit feedback.    
 9.You can cancel the order after its placed when you enter choice 9.   
 10.Enter choice 9 to Exit the program.   
 
